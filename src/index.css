@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+/* Brushed Metallic & DAW Black-Gold Theme Variables */
+:root {
+  --bg-main: #475569;            /* Stronger Brushed Metallic Grey background */
+  --panel-bg: #ffffff;           /* Clean premium white metal panel bg for extreme contrast */
+  --text-dark: #090d16;          /* Deepest contrast slate-black text */
+  --text-muted: #1e293b;         /* Dark rich graphite slate grey for perfect day readability */
+  --border-color: #94a3b8;       /* Strong high-visibility slate borders */
+  --pastel-blue: #cbd5e1;
+  --editor-header-bg: #e2e8f0;   /* Slate grey roll headers */
+  --grid-bg: #f8fafc;
+  --grid-line: #cbd5e1;
+  
+  /* Precision Day Mode LED indicators */
+  --accent-mint: #059669;
+  --accent-mint-text: #ffffff;
+  --accent-mint-border: #047857;
+  
+  --accent-lavender: #4f46e5;
+  --accent-lavender-text: #ffffff;
+  --accent-lavender-border: #3730a3;
+  
+  --accent-pink: #db2777;
+  --accent-pink-text: #ffffff;
+  --accent-pink-border: #9d174d;
+  
+  --accent-yellow: #ca8a04;
+  --accent-yellow-border: #a16207;
+  
+  --brand-color: #1e293b;        /* Dark Slate highlight */
+  --brand-hover: #0f172a;
+  --card-sub-bg: #f1f5f9;
+}
+
+[data-theme="night"] {
+  --bg-main: #000000;            /* Pitch black deep background */
+  --panel-bg: #0d0e12;           /* Beautiful dark charcoal metal DAW panel */
+  --text-dark: #fbfbfd;          /* Bright high contrast silver text */
+  --text-muted: #858999;         /* Sophisticated brushed steel grey */
+  --border-color: #d4af373f;     /* Sophisticated card outlines in gorgeous Hardware GOLD */
+  --pastel-blue: #1b1b26;
+  --editor-header-bg: #111218;   /* Professional matte black editor header */
+  --grid-bg: #050608;            /* Matte black grid backgrounds */
+  --grid-line: #1c1d24;          /* Fine grey grid subdivisions */
+  
+  /* Professional neon-state hardware synth LEDs */
+  --accent-mint: #062f25;
+  --accent-mint-text: #10b981;   /* Pro emerald step indicator */
+  --accent-mint-border: #d4af37; /* Gold accent borders */
+  
+  --accent-lavender: #23163a;
+  --accent-lavender-text: #a855f7; /* Electric violet indicator */
+  --accent-lavender-border: #d4af37; /* Gold highlight accent */
+  
+  --accent-pink: #340c1a;
+  --accent-pink-text: #f43f5e;
+  --accent-pink-border: #d4af37;
+  
+  --accent-yellow: #281e05;
+  --accent-yellow-border: #d4af37;
+  
+  --brand-color: #d4af37;        /* Golden Core accent color */
+  --brand-hover: #f0c952;
+  --card-sub-bg: #07080a;
+}
+
+/* Global Font Settings and Base Styles */
+body {
+  background-color: var(--bg-main);
+  color: var(--text-dark);
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+  min-height: 100vh;
+}
+
+.piano-grid-line {
+  background-size: 100% 20px;
+  background-image: linear-gradient(var(--grid-line) 1px, transparent 1px);
+}
+
+.custom-precise-crosshair {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><circle cx='12' cy='12' r='5' fill='none' stroke='%23ef4444' stroke-width='1' opacity='0.8' style='filter: drop-shadow(0 0 1px %23ef4444);'/><line x1='12' y1='2' x2='12' y2='22' stroke='%23ef4444' stroke-width='1'/><line x1='2' y1='12' x2='22' y2='12' stroke='%23ef4444' stroke-width='1'/><circle cx='12' cy='12' r='1' fill='%23ffffff'/></svg>") 12 12, crosshair;
+}
+

@@ -1,0 +1,6 @@
+{
+  "name": "O2 Top line MIDI",
+  "description": "Drum & Synth MIDI를 업로드하여 파스텔톤 가이드라인 및 추천 BPM, 장르, 스케일 정보와 16비트 그리드 가이드 조명 에디터를 통해 밴드랩/수노 맞춤형 보컬 피아노 탑라인 멜로디를 구성하는 툴",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
